@@ -12,4 +12,4 @@ def deleteBucket(bucketName):
         return False
     return True
 
-deleteBucket("killabaytesdktest-08042021")
+deleteBucket("YourBucketName")

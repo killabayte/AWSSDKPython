@@ -18,4 +18,4 @@ def createBucket(bucketName, region=None):
         return False
     return True
 
-createBucket("NameOfThBucket", region="Region")
+createBucket("NameOfTheBucket", region="Region")
