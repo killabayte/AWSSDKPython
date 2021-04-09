@@ -9,7 +9,6 @@ def cleanBucket(bucketName):
     bucket = s3.Bucket(bucketName)
     for key in bucket.objects.all():
         key.delete()
-    return(f"Bucket: {bucketName}, successfully cleaned.")
 
 def deleteBucket(bucketName):
     try:
@@ -21,7 +20,5 @@ def deleteBucket(bucketName):
     return True
 
 cleanBucket(BUCKET)
-
-if cleanBucket:
-    print((f"Bucket: {BUCKET}, successfully cleaned."))
-    deleteBucket(BUCKET)
+print((f"Bucket: {BUCKET}, successfully cleaned."))
+deleteBucket(BUCKET)
